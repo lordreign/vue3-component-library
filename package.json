@@ -1,0 +1,32 @@
+{
+  "name": "vue3-component-library",
+  "version": "0.0.0",
+  "description": "Vue Component Library Example",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "main": "./dist/vue3-component-library.umd.js",
+  "module": "./dist/vue3-component-library.es.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-component-library.es.js",
+      "require": "./dist/vue3-component-library.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "^1.58.3",
+    "vite": "^4.1.0"
+  }
+}
